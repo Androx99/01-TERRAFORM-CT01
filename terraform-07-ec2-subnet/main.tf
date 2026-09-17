@@ -13,6 +13,9 @@ data "aws_ami" "amazon_linux" {
 
 resource "aws_vpc" "vpc_aula" {
   cidr_block = "10.10.0.0/16"
+  tags = {
+    Environment = "aula"
+}
 }
 
 resource "aws_subnet" "publica" {
