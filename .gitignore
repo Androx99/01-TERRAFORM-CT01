@@ -1,0 +1,24 @@
+# Directorio local de Terraform y binarios de providers
+**/.terraform/*
+**/.terraform/
+.terraform/
+
+# Archivos de estado de Terraform
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Archivos de logs de error
+crash.log
+crash.*.log
+
+# Archivos de planes de ejecución
+*.tfplan
+
+# Variables con posibles credenciales o secretos
+*.tfvars
+*.tfvars.json
+
+# Archivos de configuración de CLI
+.terraformrc
+terraform.rc
