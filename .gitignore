@@ -22,13 +22,7 @@ crash.*.log
 *.tfplan
 *.tfplan.binary
 
-# Variables locales (con claves o datos privados)
-*.tfvars
-*.tfvars.json
-*.auto.tfvars
-*.auto.tfvars.json
-
-# Archivos de configuración de CLI de Terraform
+# Archivos de configuracion de CLI de Terraform
 .terraformrc
 terraform.rc
 
