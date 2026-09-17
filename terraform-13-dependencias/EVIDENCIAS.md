@@ -1,0 +1,9 @@
+  Id CommandLine                                                              
+  -- -----------                                                              
+   1 try { . "c:\Users\Andro\AppData\Local\Programs\Microsoft VS Code\7debc...
+   2 $env:AWS_ACCESS_KEY_ID="ASIA5IEAOKSCSFH3VW7K"...                         
+   3 terraform init...                                                        
+   4 terraform validate                                                       
+   5 terraform plan                                                           
+   6 terraform validate                                                       
+   7 terraform plan        
