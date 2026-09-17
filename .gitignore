@@ -1,24 +1,69 @@
-# Directorio local de Terraform y binarios de providers
-**/.terraform/*
+# ==========================================
+# Terraform
+# ==========================================
+# Directorios locales y binarios de plugins descargados
 **/.terraform/
 .terraform/
+**/.terraform/*
+.terraform/*
 
-# Archivos de estado de Terraform
+# Archivos de estado de infraestructura (pueden contener contraseñas y datos sensibles)
 *.tfstate
 *.tfstate.*
 *.tfstate.backup
+*.tfstate.backup.*
+.terraform.tfstate.lock.info
 
-# Archivos de logs de error
+# Archivos de logs de errores
 crash.log
 crash.*.log
 
-# Archivos de planes de ejecución
+# Archivos de planes generados
 *.tfplan
+*.tfplan.binary
 
-# Variables con posibles credenciales o secretos
+# Variables locales (con claves o datos privados)
 *.tfvars
 *.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
 
-# Archivos de configuración de CLI
+# Archivos de configuración de CLI de Terraform
 .terraformrc
 terraform.rc
+
+# ==========================================
+# Binarios y ejecutables
+# ==========================================
+*.exe
+*.dll
+*.so
+*.dylib
+*.zip
+*.tar.gz
+
+# ==========================================
+# Secretos, credenciales y claves SSH (Labs AWS/EC2)
+# ==========================================
+*.pem
+*.key
+*.cer
+*.crt
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+.env
+.env.*
+
+# ==========================================
+# Editores y sistema operativo
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
